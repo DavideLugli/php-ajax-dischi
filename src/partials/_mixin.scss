@@ -1,0 +1,12 @@
+@mixin flex {
+  display: flex;
+  align-items: center;
+};
+
+@mixin albumCard {
+background-color: $headerColor;
+height: $cardHeight;
+padding: 20px;
+margin: 10px 20px;
+text-align: center;
+}

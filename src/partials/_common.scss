@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $bgColor;
+  min-height: 100vh;
+  font-family: $fontFamily;
+  color: $titleColor;
+}
+
+.album-container {
+  @include flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 80px 0;
+}
+
+.album {
+  @include albumCard;
+  @include flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-basis: 200px;
+
+  img {
+    max-width: 100%;
+  }
+
+  h3 {
+    margin: 20px 0;
+    color: $titleColor;
+    font-size: $fontSize;
+  }
+
+  span.author {
+    color: $color;
+    font-size: $fontSize * 0.8;
+  }
+
+  span.year {
+    color: $yearColor;
+    font-size: $fontSize * 0.8;
+  }
+}
